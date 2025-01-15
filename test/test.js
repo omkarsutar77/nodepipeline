@@ -2,7 +2,7 @@ var request = require('supertest');
 var app = require('../index.js');
  
 describe('GET /', function() {
-  it('respond with hello word', function(done) {
+  it('respond parat change jhal ahe kay', function(done) {
     request(app)
       .get('/nonexistentpage')
       .expect(404)
