@@ -2,7 +2,7 @@ var request = require('supertest');
 var app = require('../index.js');
  
 describe('GET /', function() {
-  it('respond with 404 page not found', function(done) {
+  it('respond with hello word', function(done) {
     request(app)
       .get('/nonexistentpage')
       .expect(404)
